@@ -420,6 +420,14 @@ export default {
                 this.getAccounts();
             },
         },
+        'search.open': {
+            handler: function (value) {
+                if (!value) {
+                    this.search.query = "";
+                    this.getAccounts();
+                }
+            },
+        },
     },
     setup() {
         const options = {
